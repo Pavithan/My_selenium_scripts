@@ -97,9 +97,8 @@ public class standalonetest {
 		
 		WebElement sourceElement = driver.findElement(By.cssSelector("#draggable"));
 		WebElement targetElement = driver.findElement(By.xpath("(//div[@id='droppable'])[1]"));
-		
-		Actions actions = new Actions(driver);
-		actions.dragAndDrop(sourceElement, targetElement).build().perform();
+
+		acnt.dragAndDrop(sourceElement, targetElement).build().perform();
 		
 	}
 
